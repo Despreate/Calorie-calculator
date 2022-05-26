@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+    text-align: center;
+}
+body {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+.container{
+    width: 40%;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    padding: 1.25rem;
+    margin-top: 10px;
+}
+.form-control {
+        display: inline-block;
+        width: 80%;
+        height: calc(1.5em + .75rem + 2px);
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #495057;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: .25rem;
+        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+form {
+    overflow: hidden;
+}
+.form-control {
+    float: right;
+    clear: both;
+}
+.button {
+    background-color: #555555;
+    border: none;
+    color: white;
+    padding: 14px 130px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: .40rem
+}
+.button:hover{
+    color: #fff;
+background-color: #23272b;
+border-color: #1d2124;
+text-decoration: none;
+}
+#SelectActive{
+display: block;
+width: 80%;
+height: calc(1.5em + .75rem + 2px);
+padding: .375rem 1.75rem .375rem .75rem;
+font-size: 1rem;
+font-weight: 400;
+line-height: 1.5;
+color: #495057;
+vertical-align: middle;
+background: #fff url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right .75rem center/8px 10px;
+border: 1px solid #ced4da;
+border-radius: .25rem;
+appearance: none;
+float: right;
+}
+input .custom-control{text-align:right;}

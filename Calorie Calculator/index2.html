@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./sttyle2.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  </head>
+  <body>
+
+    <div class="background">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="container">
+      <div class="title">Calorie<span class="name">Calculator</span></div>
+      <div class="content">
+        <form action="add.php" method="post">
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details">Name</span>
+              <input class="inp" id="name" type="text" name="name" placeholder="Enter your name" required />
+            </div>
+            <div class="input-box">
+              <span class="details">Age</span>
+              <input class="inp" id="age" type="text" name="age" placeholder="Enter your age" required />
+            </div>
+            <div class="input-box">
+              <span class="details">Weight</span>
+              <input class="inp" id="weight" name="weight" type="text" placeholder="Enter your weight" required />
+            </div>
+            <div class="input-box">
+              <span class="details">Height</span>
+              <input class="inp" id="height" name="height" type="text" placeholder="Enter your Height" required />
+            </div>
+            <div id="Activity" class="input-box">
+              <span class="details">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Activity</span>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <select id="SelectActive">
+                <option value="Sedentary">No exercise </option>
+                <option value="Lightly" >Exercise 1-3times/week</option>
+                <option value="Moderately" >Exercise 3-5times/week</option>
+                <option value="Active" >Exercise 6-7times/week</option>
+                <option value="Very" >Extra Active: very intense exercise daily, or physical job</option>
+            </div>
+          </div>
+          <div class="gender-details">
+            <input type="radio" name="gender" id="dot-1" />
+            <input type="radio" name="gender" id="dot-2" /><br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="gender-title">Gender</span>
+            <div class="category">
+              &nbsp;<label for="dot-1">
+                <span class="dot one"></span>
+                <span class="gender">Male</span>
+              </label>
+              <label for="dot-2">
+                <span class="dot two"></span>
+                <span class="gender">Female</span>
+              </label><br><br>
+            </div>
+          </div>
+          <div class="button"><br>
+            kcal per day: <p id="totlCals"></p>
+            <br><input type="submit" name="submit" value="claculate" onclick="calc()"/> 
+           
+          </div>
+        </form>
+      </div>
+      <a id="manage" href="./manage.php"><span class="material-symbols-outlined">
+        manage_accounts
+        </span></a><br><br>
+        <a class="arrow" href="./main.html"><span class="material-symbols-outlined">
+              arrow_back_ios
+              </span></a> 
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
